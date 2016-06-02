@@ -1,5 +1,207 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+
+
+        /*global style*/
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Passion+One);
+@import url(https://fonts.googleapis.com/css?family=EB+Garamond);
+
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  height:100%;
+}
+
+body{
+  background:url("http://www.columbussports.org/wp-content/uploads/2012/01/Columbus-Skyline-South-e1332361914545.jpg");
+  background-size:cover;
+  font-size:10px;
+  color:white;
+  height:100%;
+  display:flex;
+  display:-webkit-flex;
+  display:-moz-flex;
+  display:-o-flex;
+  flex-direction:column;
+  flex-direction:-webkit-column;
+  flex-direction:-moz-column;
+  flex-direction:-o-column;
+  margin:0;
+}
+
+
+
+        /*main style*/
+
+
+
+main{
+  background:rgba(0, 0, 0, .6);
+  height:100%;
+  display:flex;
+  display:-webkit-flex;
+  display:-moz-flex;
+  display:-o-flex;
+  margin:0;
+}
+
+
+
+        /*left div / image / social media style*/
+
+
+
+#left{
+  display:flex;
+  display:-webkit-flex;
+  display:-moz-flex;
+  display:-o-flex;
+  flex-direction:column;
+  flex-direction:-webkit-column;
+  flex-direction:-moz-column;
+  flex-direction:-o-column;
+}
+
+#profile_pic{
+  width:21vw;
+  height:21vw;
+  float:left;
+  margin:3em;
+  border:.2em solid #fff;
+  border-radius:.5em;
+}
+
+#contact{
+  width:21vw;
+  text-align:center;
+  display:block;
+  color:#fff;
+  float:left;
+  border:.2em solid #fff;
+  border-radius:.5em;
+  margin:0 3em -3em 3em;
+  background:rgba(0, 0, 0, .8);
+  padding:1vw;
+  flex:1;
+  -webkit-flex:1;
+  -moz-flex:1;
+  -o-flex:1;
+}
+
+#icons{
+  margin-bottom:3em;
+}
+
+#contact img{
+  width:3.5vw;
+  height:3.5vw;
+  margin:2vw 1vw 0 1vw;  
+}
+
+.popup{
+  position:absolute;
+  border:.2px solid #fff;
+  padding:7px;
+  width:80px;
+  height:25px;
+  border-radius:8px;
+  background:rgba(20, 20, 20, .8);
+  display:none;
+  letter-spacing: .2em
+}
+
+#email{
+  font-family:Helvetica, sans-serif;
+  font-size:1vw;
+  letter-spacing:.4vw;
+  text-decoration:none;
+  color:#fff;
+}
+
+
+
+
+
+
+        /*right div / bio style*/
+
+
+
+#right{
+  display:flex;
+  display:-webkit-flex;
+  display:-moz-flex;
+  display:-o-flex;
+  flex-direction:column;
+  flex-direction:-webkit-column;
+  flex-direction:-moz-column;
+  flex-direction:-o-column;
+}
+
+#bio{
+  border:.2em solid #fff;
+  border-radius:.5em;
+  margin:3em 3em -3em 0;
+  padding: 3em;
+  background:rgba(0, 0, 0, .8);
+  flex:1;
+  -webkit-flex:1;
+  -moz-flex:1;
+  -o-flex:1;
+}
+
+#bio h1{
+  font-family:Passion One, Helvetica, sans-serif;
+  font-size:4.1vw;
+  display:block;
+  letter-spacing:.3em;
+  text-transform:uppercase;
+  font-weight:500;
+  margin-bottom:1em;
+}
+
+#bio p{
+  font-family:EB Garamond, Times, serif;
+  font-size:1.7vw;
+  font-weight:500;
+  text-align:justify;
+  display:block;
+  letter-spacing:.2em;
+  line-height:1.8em;
+}
+
+
+
+        /*off screen wrapping*/
+
+
+
+.offscreen{
+  display:flex;
+  flex-direction:column;
+  overflow:hidden;
+  flex:1;
+  -webkit-flex:1;
+  -moz-flex:1;
+  -o-flex:1;
+}
+
+
+        /*float fixing*/
+
+
+
+.clearfix:after{
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
 }
